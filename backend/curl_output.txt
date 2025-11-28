@@ -1,0 +1,67 @@
+Note: Unnecessary use of -X or --request, POST is already inferred.
+* Host localhost:4000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:4000...
+*   Trying 127.0.0.1:4000...
+* Established connection to localhost (127.0.0.1 port 4000) from 127.0.0.1 port 54356 
+* using HTTP/1.x
+> POST /api/auth/login HTTP/1.1
+
+> Host: localhost:4000
+
+> User-Agent: curl/8.16.0
+
+> Accept: */*
+
+> Content-Type: application/json
+
+> Content-Length: 2
+
+> 
+
+} [2 bytes data]
+* upload completely sent off: 2 bytes
+< HTTP/1.1 400 Bad Request
+
+< X-Powered-By: Express
+
+< Access-Control-Allow-Origin: *
+
+< Content-Security-Policy: default-src 'none'
+
+< X-Content-Type-Options: nosniff
+
+< Content-Type: text/html; charset=utf-8
+
+< Content-Length: 1153
+
+< Date: Fri, 28 Nov 2025 17:31:54 GMT
+
+< Connection: keep-alive
+
+< Keep-Alive: timeout=5
+
+< 
+
+{ [1153 bytes data]
+
+100  1155  100  1153  100     2   5324      9 --:--:-- --:--:-- --:--:--  5347
+* Connection #0 to host localhost:4000 left intact
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>SyntaxError: Expected property name or &#39;}&#39; in JSON at position 1 (line 1 column 2)<br> &nbsp; &nbsp;at JSON.parse (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at parse (D:\vista-2\night-attendance-system\backend\node_modules\body-parser\lib\types\json.js:74:19)<br> &nbsp; &nbsp;at D:\vista-2\night-attendance-system\backend\node_modules\body-parser\lib\read.js:163:18<br> &nbsp; &nbsp;at AsyncResource.runInAsyncScope (node:async_hooks:214:14)<br> &nbsp; &nbsp;at invokeCallback (D:\vista-2\night-attendance-system\backend\node_modules\raw-body\index.js:238:16)<br> &nbsp; &nbsp;at done (D:\vista-2\night-attendance-system\backend\node_modules\raw-body\index.js:227:7)<br> &nbsp; &nbsp;at IncomingMessage.onEnd (D:\vista-2\night-attendance-system\backend\node_modules\raw-body\index.js:287:7)<br> &nbsp; &nbsp;at IncomingMessage.emit (node:events:518:28)<br> &nbsp; &nbsp;at endReadableNT (node:internal/streams/readable:1698:12)<br> &nbsp; &nbsp;at process.processTicksAndRejections (node:internal/process/task_queues:90:21)</pre>
+</body>
+</html>
+Note: Unnecessary use of -X or --request, POST is already inferred.
+* URL rejected: Malformed input to a URL function
+* closing connection #-1
+curl: (3) URL rejected: Malformed input to a URL function
